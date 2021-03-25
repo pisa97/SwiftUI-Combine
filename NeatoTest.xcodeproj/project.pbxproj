@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		6955F7E6260B9B4D009E4614 /* NeatoTestApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6955F7E5260B9B4D009E4614 /* NeatoTestApp.swift */; };
-		6955F7E8260B9B4D009E4614 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6955F7E7260B9B4D009E4614 /* ContentView.swift */; };
 		6955F7EA260B9B4F009E4614 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6955F7E9260B9B4F009E4614 /* Assets.xcassets */; };
 		6955F7ED260B9B4F009E4614 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6955F7EC260B9B4F009E4614 /* Preview Assets.xcassets */; };
 		6955F7F8260B9B4F009E4614 /* NeatoTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6955F7F7260B9B4F009E4614 /* NeatoTestTests.swift */; };
@@ -55,7 +54,6 @@
 /* Begin PBXFileReference section */
 		6955F7E2260B9B4D009E4614 /* NeatoTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NeatoTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6955F7E5260B9B4D009E4614 /* NeatoTestApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NeatoTestApp.swift; sourceTree = "<group>"; };
-		6955F7E7260B9B4D009E4614 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		6955F7E9260B9B4F009E4614 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6955F7EC260B9B4F009E4614 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		6955F7EE260B9B4F009E4614 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -140,7 +138,6 @@
 				6955F822260B9D36009E4614 /* Network */,
 				6955F813260B9B69009E4614 /* UI */,
 				6955F7E5260B9B4D009E4614 /* NeatoTestApp.swift */,
-				6955F7E7260B9B4D009E4614 /* ContentView.swift */,
 				6955F7E9260B9B4F009E4614 /* Assets.xcassets */,
 				6955F7EE260B9B4F009E4614 /* Info.plist */,
 				6955F7EB260B9B4F009E4614 /* Preview Content */,
@@ -367,7 +364,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6955F7E8260B9B4D009E4614 /* ContentView.swift in Sources */,
 				6955F8F1260CB398009E4614 /* SurfingSpotsGenerator.swift in Sources */,
 				6955F7E6260B9B4D009E4614 /* NeatoTestApp.swift in Sources */,
 				6955F833260B9EDD009E4614 /* APIProvider.swift in Sources */,

@@ -19,7 +19,7 @@ class SurfingSpotsGenerator {
 
     private func surfingSpot(from name: String) -> SurfingSpot {
 
-        let degree = Int.random(in: -20...100, using: &generator)
+        let degree = Int.random(in: -20...30, using: &generator)
         
         return SurfingSpot(name: name, imageUrl: randomImageUrl, degree: degree)
     }

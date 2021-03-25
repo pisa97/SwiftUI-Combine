@@ -13,24 +13,21 @@ final class MainSurfingSpotsViewModel: ObservableObject {
     private let apiProviderRandomDegree = APIProvider<WeatherDegreeEndpoint>()
     private let surfingSpotGenerator = SurfingSpotsGenerator(seed: UInt64(100))
     private var randomized = SeededRandomizer(seed: UInt64(100))
-    
     private var bag = Set<AnyCancellable>()
-    private var selectableIndexArray = [Int]()
+    private var selectableSurfingSpotNamesArray = [String]()
     
     private var lastDegree: Int? {
         didSet {
             
-            if selectableIndexArray.count == 0 { selectableIndexArray = Array(0..<surfingSpots.count)}
+            if selectableSurfingSpotNamesArray.count == 0 { selectableSurfingSpotNamesArray = surfingSpots.map { $0.name } }
             
-            let index = Int.random(in: 0..<selectableIndexArray.count, using: &randomized)
-            
-            surfingSpots[selectableIndexArray[index]].degree = lastDegree
-            
-            selectableIndexArray.remove(at: index)
-            
-            print(selectableIndexArray)
-            
-            surfingSpots = surfingSpots.sorted(by: { $0.degree ?? 0 > $1.degree ?? 0 })
+            let index = Int.random(in: 0..<selectableSurfingSpotNamesArray.count, using: &randomized)
+
+            if let firstIndex = surfingSpots.firstIndex(where: { $0.name == selectableSurfingSpotNamesArray[index]}) {
+                surfingSpots[firstIndex].degree = lastDegree
+                selectableSurfingSpotNamesArray.remove(at: index)
+                surfingSpots = surfingSpots.sorted(by: { $0.degree ?? 0 > $1.degree ?? 0 })
+            }
         }
     }
     
@@ -42,7 +39,7 @@ final class MainSurfingSpotsViewModel: ObservableObject {
             .map({ [weak self] (response) -> SurfingSpots in
                 guard let self = self else { return [] }
                 
-                self.selectableIndexArray = Array(0..<response.cities.count)
+                self.selectableSurfingSpotNamesArray = response.cities.map { $0.name }
                 return self.surfingSpotGenerator.generateSurfingSpots(from: response.cities).sorted(by: { $0.degree ?? 0 > $1.degree ?? 0 })
             })
             .replaceError(with: [])

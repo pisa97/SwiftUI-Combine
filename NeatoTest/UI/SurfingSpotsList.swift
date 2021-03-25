@@ -17,7 +17,7 @@ struct SurfingSpotsList : View {
                 Divider()
                 ForEach(surfingSpots, id: \.self) { surfingSpot in
                     SurfingSpotRow(surfingSpot: surfingSpot, surfingSpotDegreeFormatter: surfingSpotDegreeFormatter)
-                        .animation(.easeInOut)
+                        .animation(.spring())
                 }
             }
         }
