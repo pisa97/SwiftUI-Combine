@@ -23,7 +23,7 @@ struct NeatoTestApp: App {
     var body: some Scene {
         WindowGroup {
             NavigationView {
-                MainSurfingSpotsView()
+                MainSurfingSpotsView(surfingSpotDegreeFormatter: SurfingSpotDegreeFormatter())
                     .navigationBarTitle(Text("Surfing Spots"), displayMode: .large)
             }
         }

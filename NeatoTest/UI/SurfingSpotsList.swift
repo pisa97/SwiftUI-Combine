@@ -9,13 +9,14 @@ import SwiftUI
 
 struct SurfingSpotsList : View {
     @State var surfingSpots: [SurfingSpot]
+    @State var surfingSpotDegreeFormatter: SurfingSpotDegreeFormatter
     
     var body: some View {
         ScrollView {
             VStack(alignment: .center, spacing: 32) {
                 Divider()
                 ForEach(surfingSpots, id: \.self) { surfingSpot in
-                    SurfingSpotRow(surfingSpot: surfingSpot)
+                    SurfingSpotRow(surfingSpot: surfingSpot, surfingSpotDegreeFormatter: surfingSpotDegreeFormatter)
                         .animation(.easeInOut)
                 }
             }

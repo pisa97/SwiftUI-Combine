@@ -32,6 +32,8 @@
 		6955F8F1260CB398009E4614 /* SurfingSpotsGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6955F8F0260CB398009E4614 /* SurfingSpotsGenerator.swift */; };
 		6955F8F6260CB3AA009E4614 /* SeededGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6955F8F5260CB3AA009E4614 /* SeededGenerator.swift */; };
 		6955F8FB260CC6D2009E4614 /* SurfingSpotDegreeFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6955F8FA260CC6D2009E4614 /* SurfingSpotDegreeFormatter.swift */; };
+		6955F900260CCB71009E4614 /* WeatherDegreeEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6955F8FF260CCB71009E4614 /* WeatherDegreeEndpoint.swift */; };
+		6955F905260CCE54009E4614 /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6955F904260CCE54009E4614 /* String+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -83,6 +85,8 @@
 		6955F8F0260CB398009E4614 /* SurfingSpotsGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SurfingSpotsGenerator.swift; sourceTree = "<group>"; };
 		6955F8F5260CB3AA009E4614 /* SeededGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeededGenerator.swift; sourceTree = "<group>"; };
 		6955F8FA260CC6D2009E4614 /* SurfingSpotDegreeFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SurfingSpotDegreeFormatter.swift; sourceTree = "<group>"; };
+		6955F8FF260CCB71009E4614 /* WeatherDegreeEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherDegreeEndpoint.swift; sourceTree = "<group>"; };
+		6955F904260CCE54009E4614 /* String+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -211,6 +215,7 @@
 			children = (
 				6955F824260B9D50009E4614 /* EndpointProtocol.swift */,
 				6955F82C260B9DA6009E4614 /* SurfingSpotsEndpoint.swift */,
+				6955F8FF260CCB71009E4614 /* WeatherDegreeEndpoint.swift */,
 			);
 			path = Endpoints;
 			sourceTree = "<group>";
@@ -228,6 +233,7 @@
 			isa = PBXGroup;
 			children = (
 				6955F872260BC46A009E4614 /* EnvironmentValues+ImageCache.swift */,
+				6955F904260CCE54009E4614 /* String+Extension.swift */,
 				6955F8F0260CB398009E4614 /* SurfingSpotsGenerator.swift */,
 				6955F8F5260CB3AA009E4614 /* SeededGenerator.swift */,
 				6955F8FA260CC6D2009E4614 /* SurfingSpotDegreeFormatter.swift */,
@@ -375,6 +381,8 @@
 				6955F853260BA696009E4614 /* ActivityIndicator.swift in Sources */,
 				6955F868260BC2D2009E4614 /* ImageLoader.swift in Sources */,
 				6955F82D260B9DA6009E4614 /* SurfingSpotsEndpoint.swift in Sources */,
+				6955F900260CCB71009E4614 /* WeatherDegreeEndpoint.swift in Sources */,
+				6955F905260CCE54009E4614 /* String+Extension.swift in Sources */,
 				6955F840260B9F7B009E4614 /* APIProviderErrors.swift in Sources */,
 				6955F846260BA23B009E4614 /* SurfingSpot.swift in Sources */,
 				6955F83B260B9F6C009E4614 /* APIError.swift in Sources */,

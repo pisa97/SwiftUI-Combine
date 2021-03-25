@@ -10,6 +10,8 @@ import SwiftUI
 
 struct SurfingSpotRow : View {
     let surfingSpot: SurfingSpot
+    let surfingSpotDegreeFormatter: SurfingSpotDegreeFormatter
+
     
     var body: some View {
 
@@ -28,7 +30,7 @@ struct SurfingSpotRow : View {
             
             Rectangle()
                 .foregroundColor(.gray)
-                .opacity(surfingSpot.degree ?? 0 > 30 ? 1.0 : 0.1)
+                .opacity(surfingSpotDegreeFormatter.getWeatherStatus(from: surfingSpot.degree) == .cloudy ? 1.0 : 0)
             
             articleInfo
         }
@@ -46,7 +48,7 @@ struct SurfingSpotRow : View {
                 .multilineTextAlignment(.trailing)
                 .lineLimit(1)
             
-            Text(verbatim: String(surfingSpot.degree ?? 0))
+            Text(verbatim: surfingSpotDegreeFormatter.getFormattedDegreeData(from: surfingSpot.degree))
                 .foregroundColor(.white)
                 .font(.title2)
                 .multilineTextAlignment(.leading)
