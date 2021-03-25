@@ -6,3 +6,10 @@
 //
 
 import Foundation
+
+class FileProgressFormatter {
+    
+    func progressText(from value: Int) -> String {
+        "\(value) %"
+    }
+}

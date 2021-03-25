@@ -13,6 +13,25 @@
 		6955F7ED260B9B4F009E4614 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6955F7EC260B9B4F009E4614 /* Preview Assets.xcassets */; };
 		6955F7F8260B9B4F009E4614 /* NeatoTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6955F7F7260B9B4F009E4614 /* NeatoTestTests.swift */; };
 		6955F803260B9B4F009E4614 /* NeatoTestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6955F802260B9B4F009E4614 /* NeatoTestUITests.swift */; };
+		6955F815260B9C9F009E4614 /* MainSurfingSpotsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6955F814260B9C9F009E4614 /* MainSurfingSpotsView.swift */; };
+		6955F81D260B9CB3009E4614 /* MainSurfingSpotsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6955F81C260B9CB3009E4614 /* MainSurfingSpotsViewModel.swift */; };
+		6955F825260B9D50009E4614 /* EndpointProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6955F824260B9D50009E4614 /* EndpointProtocol.swift */; };
+		6955F82D260B9DA6009E4614 /* SurfingSpotsEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6955F82C260B9DA6009E4614 /* SurfingSpotsEndpoint.swift */; };
+		6955F833260B9EDD009E4614 /* APIProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6955F832260B9EDD009E4614 /* APIProvider.swift */; };
+		6955F83B260B9F6C009E4614 /* APIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6955F83A260B9F6C009E4614 /* APIError.swift */; };
+		6955F840260B9F7B009E4614 /* APIProviderErrors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6955F83F260B9F7B009E4614 /* APIProviderErrors.swift */; };
+		6955F846260BA23B009E4614 /* SurfingSpot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6955F845260BA23B009E4614 /* SurfingSpot.swift */; };
+		6955F84E260BA292009E4614 /* SurfingSpotResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6955F84D260BA292009E4614 /* SurfingSpotResponse.swift */; };
+		6955F853260BA696009E4614 /* ActivityIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6955F852260BA696009E4614 /* ActivityIndicator.swift */; };
+		6955F858260BA6B9009E4614 /* SurfingSpotsList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6955F857260BA6B9009E4614 /* SurfingSpotsList.swift */; };
+		6955F85D260BA6D7009E4614 /* SurfingSpotRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6955F85C260BA6D7009E4614 /* SurfingSpotRow.swift */; };
+		6955F863260BC2BD009E4614 /* AsyncImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6955F862260BC2BD009E4614 /* AsyncImage.swift */; };
+		6955F868260BC2D2009E4614 /* ImageLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6955F867260BC2D2009E4614 /* ImageLoader.swift */; };
+		6955F86D260BC2E5009E4614 /* ImageCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6955F86C260BC2E5009E4614 /* ImageCache.swift */; };
+		6955F873260BC46A009E4614 /* EnvironmentValues+ImageCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6955F872260BC46A009E4614 /* EnvironmentValues+ImageCache.swift */; };
+		6955F8F1260CB398009E4614 /* SurfingSpotsGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6955F8F0260CB398009E4614 /* SurfingSpotsGenerator.swift */; };
+		6955F8F6260CB3AA009E4614 /* SeededGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6955F8F5260CB3AA009E4614 /* SeededGenerator.swift */; };
+		6955F8FB260CC6D2009E4614 /* SurfingSpotDegreeFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6955F8FA260CC6D2009E4614 /* SurfingSpotDegreeFormatter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +64,25 @@
 		6955F7FE260B9B4F009E4614 /* NeatoTestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NeatoTestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6955F802260B9B4F009E4614 /* NeatoTestUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NeatoTestUITests.swift; sourceTree = "<group>"; };
 		6955F804260B9B4F009E4614 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6955F814260B9C9F009E4614 /* MainSurfingSpotsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainSurfingSpotsView.swift; sourceTree = "<group>"; };
+		6955F81C260B9CB3009E4614 /* MainSurfingSpotsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainSurfingSpotsViewModel.swift; sourceTree = "<group>"; };
+		6955F824260B9D50009E4614 /* EndpointProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndpointProtocol.swift; sourceTree = "<group>"; };
+		6955F82C260B9DA6009E4614 /* SurfingSpotsEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SurfingSpotsEndpoint.swift; sourceTree = "<group>"; };
+		6955F832260B9EDD009E4614 /* APIProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIProvider.swift; sourceTree = "<group>"; };
+		6955F83A260B9F6C009E4614 /* APIError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIError.swift; sourceTree = "<group>"; };
+		6955F83F260B9F7B009E4614 /* APIProviderErrors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIProviderErrors.swift; sourceTree = "<group>"; };
+		6955F845260BA23B009E4614 /* SurfingSpot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SurfingSpot.swift; sourceTree = "<group>"; };
+		6955F84D260BA292009E4614 /* SurfingSpotResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SurfingSpotResponse.swift; sourceTree = "<group>"; };
+		6955F852260BA696009E4614 /* ActivityIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityIndicator.swift; sourceTree = "<group>"; };
+		6955F857260BA6B9009E4614 /* SurfingSpotsList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SurfingSpotsList.swift; sourceTree = "<group>"; };
+		6955F85C260BA6D7009E4614 /* SurfingSpotRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SurfingSpotRow.swift; sourceTree = "<group>"; };
+		6955F862260BC2BD009E4614 /* AsyncImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsyncImage.swift; sourceTree = "<group>"; };
+		6955F867260BC2D2009E4614 /* ImageLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageLoader.swift; sourceTree = "<group>"; };
+		6955F86C260BC2E5009E4614 /* ImageCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCache.swift; sourceTree = "<group>"; };
+		6955F872260BC46A009E4614 /* EnvironmentValues+ImageCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "EnvironmentValues+ImageCache.swift"; sourceTree = "<group>"; };
+		6955F8F0260CB398009E4614 /* SurfingSpotsGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SurfingSpotsGenerator.swift; sourceTree = "<group>"; };
+		6955F8F5260CB3AA009E4614 /* SeededGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeededGenerator.swift; sourceTree = "<group>"; };
+		6955F8FA260CC6D2009E4614 /* SurfingSpotDegreeFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SurfingSpotDegreeFormatter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +133,10 @@
 		6955F7E4260B9B4D009E4614 /* NeatoTest */ = {
 			isa = PBXGroup;
 			children = (
+				6955F871260BC45C009E4614 /* Tools */,
+				6955F844260BA22A009E4614 /* Models */,
+				6955F822260B9D36009E4614 /* Network */,
+				6955F813260B9B69009E4614 /* UI */,
 				6955F7E5260B9B4D009E4614 /* NeatoTestApp.swift */,
 				6955F7E7260B9B4D009E4614 /* ContentView.swift */,
 				6955F7E9260B9B4F009E4614 /* Assets.xcassets */,
@@ -128,6 +170,69 @@
 				6955F804260B9B4F009E4614 /* Info.plist */,
 			);
 			path = NeatoTestUITests;
+			sourceTree = "<group>";
+		};
+		6955F813260B9B69009E4614 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				6955F821260B9CB9009E4614 /* MainSurfingSpots */,
+				6955F852260BA696009E4614 /* ActivityIndicator.swift */,
+				6955F857260BA6B9009E4614 /* SurfingSpotsList.swift */,
+				6955F85C260BA6D7009E4614 /* SurfingSpotRow.swift */,
+				6955F862260BC2BD009E4614 /* AsyncImage.swift */,
+				6955F867260BC2D2009E4614 /* ImageLoader.swift */,
+				6955F86C260BC2E5009E4614 /* ImageCache.swift */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		6955F821260B9CB9009E4614 /* MainSurfingSpots */ = {
+			isa = PBXGroup;
+			children = (
+				6955F814260B9C9F009E4614 /* MainSurfingSpotsView.swift */,
+				6955F81C260B9CB3009E4614 /* MainSurfingSpotsViewModel.swift */,
+			);
+			path = MainSurfingSpots;
+			sourceTree = "<group>";
+		};
+		6955F822260B9D36009E4614 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				6955F823260B9D3E009E4614 /* Endpoints */,
+				6955F832260B9EDD009E4614 /* APIProvider.swift */,
+				6955F83A260B9F6C009E4614 /* APIError.swift */,
+				6955F83F260B9F7B009E4614 /* APIProviderErrors.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		6955F823260B9D3E009E4614 /* Endpoints */ = {
+			isa = PBXGroup;
+			children = (
+				6955F824260B9D50009E4614 /* EndpointProtocol.swift */,
+				6955F82C260B9DA6009E4614 /* SurfingSpotsEndpoint.swift */,
+			);
+			path = Endpoints;
+			sourceTree = "<group>";
+		};
+		6955F844260BA22A009E4614 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				6955F845260BA23B009E4614 /* SurfingSpot.swift */,
+				6955F84D260BA292009E4614 /* SurfingSpotResponse.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		6955F871260BC45C009E4614 /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				6955F872260BC46A009E4614 /* EnvironmentValues+ImageCache.swift */,
+				6955F8F0260CB398009E4614 /* SurfingSpotsGenerator.swift */,
+				6955F8F5260CB3AA009E4614 /* SeededGenerator.swift */,
+				6955F8FA260CC6D2009E4614 /* SurfingSpotDegreeFormatter.swift */,
+			);
+			path = Tools;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -260,7 +365,26 @@
 			buildActionMask = 2147483647;
 			files = (
 				6955F7E8260B9B4D009E4614 /* ContentView.swift in Sources */,
+				6955F8F1260CB398009E4614 /* SurfingSpotsGenerator.swift in Sources */,
 				6955F7E6260B9B4D009E4614 /* NeatoTestApp.swift in Sources */,
+				6955F86D260BC2E5009E4614 /* ImageCache.swift in Sources */,
+				6955F833260B9EDD009E4614 /* APIProvider.swift in Sources */,
+				6955F873260BC46A009E4614 /* EnvironmentValues+ImageCache.swift in Sources */,
+				6955F825260B9D50009E4614 /* EndpointProtocol.swift in Sources */,
+				6955F858260BA6B9009E4614 /* SurfingSpotsList.swift in Sources */,
+				6955F853260BA696009E4614 /* ActivityIndicator.swift in Sources */,
+				6955F868260BC2D2009E4614 /* ImageLoader.swift in Sources */,
+				6955F82D260B9DA6009E4614 /* SurfingSpotsEndpoint.swift in Sources */,
+				6955F840260B9F7B009E4614 /* APIProviderErrors.swift in Sources */,
+				6955F846260BA23B009E4614 /* SurfingSpot.swift in Sources */,
+				6955F83B260B9F6C009E4614 /* APIError.swift in Sources */,
+				6955F863260BC2BD009E4614 /* AsyncImage.swift in Sources */,
+				6955F81D260B9CB3009E4614 /* MainSurfingSpotsViewModel.swift in Sources */,
+				6955F84E260BA292009E4614 /* SurfingSpotResponse.swift in Sources */,
+				6955F8FB260CC6D2009E4614 /* SurfingSpotDegreeFormatter.swift in Sources */,
+				6955F8F6260CB3AA009E4614 /* SeededGenerator.swift in Sources */,
+				6955F815260B9C9F009E4614 /* MainSurfingSpotsView.swift in Sources */,
+				6955F85D260BA6D7009E4614 /* SurfingSpotRow.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -347,7 +471,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -402,7 +526,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;

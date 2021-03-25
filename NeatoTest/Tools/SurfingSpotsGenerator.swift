@@ -6,3 +6,31 @@
 //
 
 import Foundation
+
+class SurfingSpotsGenerator {
+
+    private let randomImageUrl = "https://picsum.photos/600/300"
+    
+    private var generator: SeededGenerator
+    
+    init(seed: UInt64) {
+        generator = SeededGenerator(seed: seed)
+    }
+
+    private func surfingSpot(from name: String) -> SurfingSpot {
+
+        let degree = Int.random(in: -20...100, using: &generator)
+        
+        return SurfingSpot(name: name, imageUrl: randomImageUrl, degree: degree)
+    }
+    
+    func generateSurfingSpots(from surfingSpots: SurfingSpots) -> SurfingSpots {
+        var updatedSurfingSpots = SurfingSpots()
+        
+        for i in surfingSpots {
+            updatedSurfingSpots.append(surfingSpot(from: i.name))
+        }
+        
+        return updatedSurfingSpots
+    }
+}

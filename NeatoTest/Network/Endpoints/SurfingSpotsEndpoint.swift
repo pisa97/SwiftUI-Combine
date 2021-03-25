@@ -6,3 +6,30 @@
 //
 
 import Foundation
+
+enum SurfingSpotsEndpoint: EndpointProtocol {
+    
+    case getSources
+    
+    var baseURL: String {
+        return "https://run.mocky.io/v3"
+    }
+    
+    var absoluteURL: String {
+        switch self {
+        case .getSources:
+            return baseURL + "/652ceb94-b24e-432b-b6c5-8a54bc1226b6"
+        }
+    }
+    
+    var params: [String: String] {
+        return [:]
+    }
+    
+    var headers: [String: String] {
+        return [
+            "Content-type": "application/json",
+            "Accept": "application/json"
+        ]
+    }
+}

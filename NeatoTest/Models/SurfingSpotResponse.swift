@@ -6,3 +6,7 @@
 //
 
 import Foundation
+
+struct SurfingSpotResponse: Codable {
+    let cities: SurfingSpots
+}

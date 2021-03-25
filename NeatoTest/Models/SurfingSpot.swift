@@ -6,3 +6,11 @@
 //
 
 import Foundation
+
+typealias SurfingSpots = [SurfingSpot]
+
+struct SurfingSpot: Codable, Hashable {
+    let name: String
+    var imageUrl: String?
+    var degree: Int?
+}
