@@ -8,7 +8,7 @@
 import UIKit
 import GameKit
 
-struct SeededGenerator : RandomNumberGenerator {
+struct SeededRandomizer : RandomNumberGenerator {
 
     mutating func next() -> UInt64 {
         let next1 = UInt64(bitPattern: Int64(gameKitRandom.nextInt()))

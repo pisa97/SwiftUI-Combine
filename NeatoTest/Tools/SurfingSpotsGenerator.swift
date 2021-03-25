@@ -11,10 +11,10 @@ class SurfingSpotsGenerator {
 
     private let randomImageUrl = "https://picsum.photos/600/300"
     
-    private var generator: SeededGenerator
+    private var generator: SeededRandomizer
     
     init(seed: UInt64) {
-        generator = SeededGenerator(seed: seed)
+        generator = SeededRandomizer(seed: seed)
     }
 
     private func surfingSpot(from name: String) -> SurfingSpot {

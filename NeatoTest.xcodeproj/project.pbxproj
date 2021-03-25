@@ -27,13 +27,12 @@
 		6955F85D260BA6D7009E4614 /* SurfingSpotRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6955F85C260BA6D7009E4614 /* SurfingSpotRow.swift */; };
 		6955F863260BC2BD009E4614 /* AsyncImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6955F862260BC2BD009E4614 /* AsyncImage.swift */; };
 		6955F868260BC2D2009E4614 /* ImageLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6955F867260BC2D2009E4614 /* ImageLoader.swift */; };
-		6955F86D260BC2E5009E4614 /* ImageCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6955F86C260BC2E5009E4614 /* ImageCache.swift */; };
-		6955F873260BC46A009E4614 /* EnvironmentValues+ImageCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6955F872260BC46A009E4614 /* EnvironmentValues+ImageCache.swift */; };
 		6955F8F1260CB398009E4614 /* SurfingSpotsGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6955F8F0260CB398009E4614 /* SurfingSpotsGenerator.swift */; };
-		6955F8F6260CB3AA009E4614 /* SeededGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6955F8F5260CB3AA009E4614 /* SeededGenerator.swift */; };
+		6955F8F6260CB3AA009E4614 /* SeededRandomizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6955F8F5260CB3AA009E4614 /* SeededRandomizer.swift */; };
 		6955F8FB260CC6D2009E4614 /* SurfingSpotDegreeFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6955F8FA260CC6D2009E4614 /* SurfingSpotDegreeFormatter.swift */; };
 		6955F900260CCB71009E4614 /* WeatherDegreeEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6955F8FF260CCB71009E4614 /* WeatherDegreeEndpoint.swift */; };
 		6955F905260CCE54009E4614 /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6955F904260CCE54009E4614 /* String+Extension.swift */; };
+		6955F90A260CF4F7009E4614 /* Degree.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6955F909260CF4F7009E4614 /* Degree.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -80,13 +79,12 @@
 		6955F85C260BA6D7009E4614 /* SurfingSpotRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SurfingSpotRow.swift; sourceTree = "<group>"; };
 		6955F862260BC2BD009E4614 /* AsyncImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsyncImage.swift; sourceTree = "<group>"; };
 		6955F867260BC2D2009E4614 /* ImageLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageLoader.swift; sourceTree = "<group>"; };
-		6955F86C260BC2E5009E4614 /* ImageCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCache.swift; sourceTree = "<group>"; };
-		6955F872260BC46A009E4614 /* EnvironmentValues+ImageCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "EnvironmentValues+ImageCache.swift"; sourceTree = "<group>"; };
 		6955F8F0260CB398009E4614 /* SurfingSpotsGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SurfingSpotsGenerator.swift; sourceTree = "<group>"; };
-		6955F8F5260CB3AA009E4614 /* SeededGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeededGenerator.swift; sourceTree = "<group>"; };
+		6955F8F5260CB3AA009E4614 /* SeededRandomizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeededRandomizer.swift; sourceTree = "<group>"; };
 		6955F8FA260CC6D2009E4614 /* SurfingSpotDegreeFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SurfingSpotDegreeFormatter.swift; sourceTree = "<group>"; };
 		6955F8FF260CCB71009E4614 /* WeatherDegreeEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherDegreeEndpoint.swift; sourceTree = "<group>"; };
 		6955F904260CCE54009E4614 /* String+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
+		6955F909260CF4F7009E4614 /* Degree.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Degree.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -185,7 +183,6 @@
 				6955F85C260BA6D7009E4614 /* SurfingSpotRow.swift */,
 				6955F862260BC2BD009E4614 /* AsyncImage.swift */,
 				6955F867260BC2D2009E4614 /* ImageLoader.swift */,
-				6955F86C260BC2E5009E4614 /* ImageCache.swift */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -225,6 +222,7 @@
 			children = (
 				6955F845260BA23B009E4614 /* SurfingSpot.swift */,
 				6955F84D260BA292009E4614 /* SurfingSpotResponse.swift */,
+				6955F909260CF4F7009E4614 /* Degree.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -232,10 +230,9 @@
 		6955F871260BC45C009E4614 /* Tools */ = {
 			isa = PBXGroup;
 			children = (
-				6955F872260BC46A009E4614 /* EnvironmentValues+ImageCache.swift */,
 				6955F904260CCE54009E4614 /* String+Extension.swift */,
 				6955F8F0260CB398009E4614 /* SurfingSpotsGenerator.swift */,
-				6955F8F5260CB3AA009E4614 /* SeededGenerator.swift */,
+				6955F8F5260CB3AA009E4614 /* SeededRandomizer.swift */,
 				6955F8FA260CC6D2009E4614 /* SurfingSpotDegreeFormatter.swift */,
 			);
 			path = Tools;
@@ -373,9 +370,7 @@
 				6955F7E8260B9B4D009E4614 /* ContentView.swift in Sources */,
 				6955F8F1260CB398009E4614 /* SurfingSpotsGenerator.swift in Sources */,
 				6955F7E6260B9B4D009E4614 /* NeatoTestApp.swift in Sources */,
-				6955F86D260BC2E5009E4614 /* ImageCache.swift in Sources */,
 				6955F833260B9EDD009E4614 /* APIProvider.swift in Sources */,
-				6955F873260BC46A009E4614 /* EnvironmentValues+ImageCache.swift in Sources */,
 				6955F825260B9D50009E4614 /* EndpointProtocol.swift in Sources */,
 				6955F858260BA6B9009E4614 /* SurfingSpotsList.swift in Sources */,
 				6955F853260BA696009E4614 /* ActivityIndicator.swift in Sources */,
@@ -389,8 +384,9 @@
 				6955F863260BC2BD009E4614 /* AsyncImage.swift in Sources */,
 				6955F81D260B9CB3009E4614 /* MainSurfingSpotsViewModel.swift in Sources */,
 				6955F84E260BA292009E4614 /* SurfingSpotResponse.swift in Sources */,
+				6955F90A260CF4F7009E4614 /* Degree.swift in Sources */,
 				6955F8FB260CC6D2009E4614 /* SurfingSpotDegreeFormatter.swift in Sources */,
-				6955F8F6260CB3AA009E4614 /* SeededGenerator.swift in Sources */,
+				6955F8F6260CB3AA009E4614 /* SeededRandomizer.swift in Sources */,
 				6955F815260B9C9F009E4614 /* MainSurfingSpotsView.swift in Sources */,
 				6955F85D260BA6D7009E4614 /* SurfingSpotRow.swift in Sources */,
 			);

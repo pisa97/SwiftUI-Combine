@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct SurfingSpotsList : View {
-    @State var surfingSpots: [SurfingSpot]
+    var surfingSpots: [SurfingSpot]
     @State var surfingSpotDegreeFormatter: SurfingSpotDegreeFormatter
     
     var body: some View {

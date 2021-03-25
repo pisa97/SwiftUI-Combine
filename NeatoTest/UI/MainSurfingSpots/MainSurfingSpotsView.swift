@@ -9,6 +9,8 @@ import SwiftUI
 
 struct MainSurfingSpotsView : View {
     @ObservedObject var viewModel = MainSurfingSpotsViewModel()
+    
+    let timer = Timer.publish(every: 3, on: .main, in: .common).autoconnect()
         
     let surfingSpotDegreeFormatter: SurfingSpotDegreeFormatter
     
@@ -30,5 +32,8 @@ struct MainSurfingSpotsView : View {
         .onAppear {
             self.viewModel.getSurfingSpots()
         }
+        .onReceive(timer, perform: { _ in
+            self.viewModel.getRandomDegree()
+        })
     }
 }

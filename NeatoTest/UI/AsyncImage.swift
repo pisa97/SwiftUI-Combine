@@ -22,7 +22,7 @@ struct AsyncImage<Placeholder: View>: View {
         self.placeholder = placeholder()
         self.image = image
         self.height = height
-        _loader = StateObject(wrappedValue: ImageLoader(url: url, cache: Environment(\.imageCache).wrappedValue))
+        _loader = StateObject(wrappedValue: ImageLoader(url: url))
     }
     
     var body: some View {

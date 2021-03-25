@@ -48,7 +48,9 @@ class APIProvider<Endpoint: EndpointProtocol> {
             .mapError({ error -> Error in
                 APIErrors(rawValue: error.code.rawValue) ?? APIProviderErrors.unknownError
             })
-            .map { $0.data }
+            .map {
+                $0.data
+            }
             .eraseToAnyPublisher()
     }
 }
