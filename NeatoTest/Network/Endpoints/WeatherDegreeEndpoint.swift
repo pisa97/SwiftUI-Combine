@@ -7,6 +7,7 @@
 
 import Foundation
 
+/// That Endpoint contain the info data request to load a random Weather Degree for a SurfingSpot
 enum WeatherDegreeEndpoint: EndpointProtocol {
     
     case getRandomNumber

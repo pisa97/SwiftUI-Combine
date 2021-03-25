@@ -10,7 +10,6 @@ import Foundation
 class SurfingSpotsGenerator {
 
     private let randomImageUrl = "https://picsum.photos/600/300"
-    
     private var generator: SeededRandomizer
     
     init(seed: UInt64) {

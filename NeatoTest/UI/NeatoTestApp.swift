@@ -25,7 +25,7 @@ struct NeatoTestApp: App {
             NavigationView {
                 MainSurfingSpotsView(surfingSpotDegreeFormatter: SurfingSpotDegreeFormatter())
                     .navigationBarTitle(Text("Surfing Spots"), displayMode: .large)
-            }
+            }.phoneOnlyStackNavigationView()
         }
     }
 }

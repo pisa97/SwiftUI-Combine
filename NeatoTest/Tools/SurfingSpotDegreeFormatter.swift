@@ -7,6 +7,7 @@
 
 import Foundation
 
+/// This formatter is used to format information related to a surfing spot based on the degree value
 class SurfingSpotDegreeFormatter {
     
     enum WeatherStatus: String {
@@ -14,6 +15,7 @@ class SurfingSpotDegreeFormatter {
         case cloudy
     }
     
+    /// - Return the weather state of the surfing spot
     func getWeatherStatus(from degree: Int?) -> WeatherStatus {
         
         if let degree = degree, degree >= 30 {
@@ -23,6 +25,7 @@ class SurfingSpotDegreeFormatter {
         }
     }
     
+    /// - Return the formatted information about the weather condition of the surfing spot
     func getFormattedDegreeData(from degree: Int?) -> String {
         
         guard let degree = degree else { return ""}

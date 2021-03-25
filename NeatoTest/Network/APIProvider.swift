@@ -8,6 +8,7 @@
 import Foundation
 import Combine
 
+/// The APIProvider implementing a generic EndpointProtocol containing data header of the HTTP request
 class APIProvider<Endpoint: EndpointProtocol> {
     func getData(from endpoint: Endpoint) -> AnyPublisher<Data, Error> {
         guard let request = performRequest(for: endpoint) else {
@@ -42,7 +43,7 @@ class APIProvider<Endpoint: EndpointProtocol> {
         return urlRequest
     }
     
-    // MARK: - Getting data
+    // MARK: - Loading data
     private func loadData(with request: URLRequest) -> AnyPublisher<Data, Error> {
         return URLSession.shared.dataTaskPublisher(for: request)
             .mapError({ error -> Error in

@@ -7,6 +7,7 @@
 
 import Foundation
 
+/// That Endpoint contain the info data request to load SurfingSpots
 enum SurfingSpotsEndpoint: EndpointProtocol {
     
     case getSources

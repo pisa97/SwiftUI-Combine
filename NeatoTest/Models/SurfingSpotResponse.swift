@@ -7,6 +7,7 @@
 
 import Foundation
 
+/// This object is used to store the service response
 struct SurfingSpotResponse: Codable {
     let cities: SurfingSpots
 }
