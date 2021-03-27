@@ -40,6 +40,7 @@
 		69A2F12F260F5C6700E47F34 /* WeatherDegreeEndpointTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69A2F12E260F5C6700E47F34 /* WeatherDegreeEndpointTests.swift */; };
 		69A2F135260F604300E47F34 /* SurfingSpotGeneratorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69A2F134260F604300E47F34 /* SurfingSpotGeneratorTests.swift */; };
 		69A2F13D260F622D00E47F34 /* SurfingSpotDegreeFormatterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69A2F13C260F622D00E47F34 /* SurfingSpotDegreeFormatterTests.swift */; };
+		69A2F143260F66C000E47F34 /* EndpointStub.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69A2F142260F66C000E47F34 /* EndpointStub.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -99,6 +100,7 @@
 		69A2F12E260F5C6700E47F34 /* WeatherDegreeEndpointTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherDegreeEndpointTests.swift; sourceTree = "<group>"; };
 		69A2F134260F604300E47F34 /* SurfingSpotGeneratorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SurfingSpotGeneratorTests.swift; sourceTree = "<group>"; };
 		69A2F13C260F622D00E47F34 /* SurfingSpotDegreeFormatterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SurfingSpotDegreeFormatterTests.swift; sourceTree = "<group>"; };
+		69A2F142260F66C000E47F34 /* EndpointStub.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndpointStub.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -170,6 +172,7 @@
 		6955F7F6260B9B4F009E4614 /* NeatoTestTests */ = {
 			isa = PBXGroup;
 			children = (
+				69A2F141260F66A300E47F34 /* Doubles  */,
 				69A2F133260F600300E47F34 /* Tools */,
 				6955F942260D47EF009E4614 /* Network */,
 				6955F92E260D4504009E4614 /* Extensions */,
@@ -313,6 +316,14 @@
 				69A2F13C260F622D00E47F34 /* SurfingSpotDegreeFormatterTests.swift */,
 			);
 			path = Tools;
+			sourceTree = "<group>";
+		};
+		69A2F141260F66A300E47F34 /* Doubles  */ = {
+			isa = PBXGroup;
+			children = (
+				69A2F142260F66C000E47F34 /* EndpointStub.swift */,
+			);
+			path = "Doubles ";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -473,6 +484,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				69A2F143260F66C000E47F34 /* EndpointStub.swift in Sources */,
 				69A2F12F260F5C6700E47F34 /* WeatherDegreeEndpointTests.swift in Sources */,
 				6955F930260D451E009E4614 /* String+ExtensionTests.swift in Sources */,
 				69A2F127260F5BA500E47F34 /* SurfingSpotsEndpointTests.swift in Sources */,
