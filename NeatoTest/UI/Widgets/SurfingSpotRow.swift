@@ -25,7 +25,7 @@ struct SurfingSpotRow : View {
                         Text("")
                     },
                     image: { Image(uiImage: $0) }, height: 200
-                )
+                ).frame(width: UIScreen.main.bounds.width - 32)
             }
             
             Rectangle()

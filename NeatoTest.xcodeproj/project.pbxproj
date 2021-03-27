@@ -10,7 +10,6 @@
 		6955F7E6260B9B4D009E4614 /* NeatoTestApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6955F7E5260B9B4D009E4614 /* NeatoTestApp.swift */; };
 		6955F7EA260B9B4F009E4614 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6955F7E9260B9B4F009E4614 /* Assets.xcassets */; };
 		6955F7ED260B9B4F009E4614 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6955F7EC260B9B4F009E4614 /* Preview Assets.xcassets */; };
-		6955F7F8260B9B4F009E4614 /* NeatoTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6955F7F7260B9B4F009E4614 /* NeatoTestTests.swift */; };
 		6955F803260B9B4F009E4614 /* NeatoTestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6955F802260B9B4F009E4614 /* NeatoTestUITests.swift */; };
 		6955F815260B9C9F009E4614 /* MainSurfingSpotsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6955F814260B9C9F009E4614 /* MainSurfingSpotsView.swift */; };
 		6955F81D260B9CB3009E4614 /* MainSurfingSpotsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6955F81C260B9CB3009E4614 /* MainSurfingSpotsViewModel.swift */; };
@@ -33,6 +32,12 @@
 		6955F905260CCE54009E4614 /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6955F904260CCE54009E4614 /* String+Extension.swift */; };
 		6955F90A260CF4F7009E4614 /* Degree.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6955F909260CF4F7009E4614 /* Degree.swift */; };
 		6955F927260D3E73009E4614 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6955F926260D3E73009E4614 /* UIView+Extension.swift */; };
+		6955F930260D451E009E4614 /* String+ExtensionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6955F92F260D451E009E4614 /* String+ExtensionTests.swift */; };
+		6955F944260D4807009E4614 /* APIErrorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6955F943260D4807009E4614 /* APIErrorTests.swift */; };
+		6955F94C260D4815009E4614 /* APIProviderErrorsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6955F94B260D4815009E4614 /* APIProviderErrorsTests.swift */; };
+		69A2F10C260E92F900E47F34 /* APIProviderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69A2F10B260E92F900E47F34 /* APIProviderTests.swift */; };
+		69A2F127260F5BA500E47F34 /* SurfingSpotsEndpointTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69A2F126260F5BA500E47F34 /* SurfingSpotsEndpointTests.swift */; };
+		69A2F12F260F5C6700E47F34 /* WeatherDegreeEndpointTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69A2F12E260F5C6700E47F34 /* WeatherDegreeEndpointTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,7 +64,6 @@
 		6955F7EC260B9B4F009E4614 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		6955F7EE260B9B4F009E4614 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6955F7F3260B9B4F009E4614 /* NeatoTestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NeatoTestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		6955F7F7260B9B4F009E4614 /* NeatoTestTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NeatoTestTests.swift; sourceTree = "<group>"; };
 		6955F7F9260B9B4F009E4614 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6955F7FE260B9B4F009E4614 /* NeatoTestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NeatoTestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6955F802260B9B4F009E4614 /* NeatoTestUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NeatoTestUITests.swift; sourceTree = "<group>"; };
@@ -85,6 +89,12 @@
 		6955F904260CCE54009E4614 /* String+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
 		6955F909260CF4F7009E4614 /* Degree.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Degree.swift; sourceTree = "<group>"; };
 		6955F926260D3E73009E4614 /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
+		6955F92F260D451E009E4614 /* String+ExtensionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+ExtensionTests.swift"; sourceTree = "<group>"; };
+		6955F943260D4807009E4614 /* APIErrorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIErrorTests.swift; sourceTree = "<group>"; };
+		6955F94B260D4815009E4614 /* APIProviderErrorsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIProviderErrorsTests.swift; sourceTree = "<group>"; };
+		69A2F10B260E92F900E47F34 /* APIProviderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIProviderTests.swift; sourceTree = "<group>"; };
+		69A2F126260F5BA500E47F34 /* SurfingSpotsEndpointTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SurfingSpotsEndpointTests.swift; sourceTree = "<group>"; };
+		69A2F12E260F5C6700E47F34 /* WeatherDegreeEndpointTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherDegreeEndpointTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -156,7 +166,8 @@
 		6955F7F6260B9B4F009E4614 /* NeatoTestTests */ = {
 			isa = PBXGroup;
 			children = (
-				6955F7F7260B9B4F009E4614 /* NeatoTestTests.swift */,
+				6955F942260D47EF009E4614 /* Network */,
+				6955F92E260D4504009E4614 /* Extensions */,
 				6955F7F9260B9B4F009E4614 /* Info.plist */,
 			);
 			path = NeatoTestTests;
@@ -260,6 +271,34 @@
 				6955F7EB260B9B4F009E4614 /* Preview Content */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		6955F92E260D4504009E4614 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				6955F92F260D451E009E4614 /* String+ExtensionTests.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		6955F942260D47EF009E4614 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				69A2F125260F5B8E00E47F34 /* Endpoints */,
+				6955F943260D4807009E4614 /* APIErrorTests.swift */,
+				6955F94B260D4815009E4614 /* APIProviderErrorsTests.swift */,
+				69A2F10B260E92F900E47F34 /* APIProviderTests.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		69A2F125260F5B8E00E47F34 /* Endpoints */ = {
+			isa = PBXGroup;
+			children = (
+				69A2F126260F5BA500E47F34 /* SurfingSpotsEndpointTests.swift */,
+				69A2F12E260F5C6700E47F34 /* WeatherDegreeEndpointTests.swift */,
+			);
+			path = Endpoints;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -420,7 +459,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6955F7F8260B9B4F009E4614 /* NeatoTestTests.swift in Sources */,
+				69A2F12F260F5C6700E47F34 /* WeatherDegreeEndpointTests.swift in Sources */,
+				6955F930260D451E009E4614 /* String+ExtensionTests.swift in Sources */,
+				69A2F127260F5BA500E47F34 /* SurfingSpotsEndpointTests.swift in Sources */,
+				69A2F10C260E92F900E47F34 /* APIProviderTests.swift in Sources */,
+				6955F944260D4807009E4614 /* APIErrorTests.swift in Sources */,
+				6955F94C260D4815009E4614 /* APIProviderErrorsTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -499,7 +543,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -554,7 +598,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;

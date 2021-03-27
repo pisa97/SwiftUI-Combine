@@ -8,9 +8,14 @@
 import Foundation
 import Combine
 
+protocol APIProviderProtocol {
+    func getData(from endpoint: EndpointProtocol) -> AnyPublisher<Data, Error>
+    func performRequest(for endpoint: EndpointProtocol) -> URLRequest?
+}
+
 /// The APIProvider implementing a generic EndpointProtocol containing data header of the HTTP request
 class APIProvider<Endpoint: EndpointProtocol> {
-    func getData(from endpoint: Endpoint) -> AnyPublisher<Data, Error> {
+    func getData(from endpoint: EndpointProtocol) -> AnyPublisher<Data, Error> {
         guard let request = performRequest(for: endpoint) else {
             return Fail(error: APIProviderErrors.invalidURL)
                 .eraseToAnyPublisher()
@@ -21,7 +26,7 @@ class APIProvider<Endpoint: EndpointProtocol> {
     }
     
     // MARK: - Request building
-    private func performRequest(for endpoint: Endpoint) -> URLRequest? {
+    func performRequest(for endpoint: EndpointProtocol) -> URLRequest? {
         guard var urlComponents = URLComponents(string: endpoint.absoluteURL) else {
             return nil
         }
