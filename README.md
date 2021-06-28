@@ -1,11 +1,15 @@
 <p align="center">
-	<img src="img/first_page.png" alt="RecSys" title="RecSys Presentation." />
+	<img src="img/swiftui_combine.png" alt="SwiftUI and Combine" title="Sample app made with SwiftUI and Combine." />
 </p>
 
 
 # Sample app SwiftUI + Combine 
 
 This repo contains a very simple implementation of a SurfingSpot App writter with SwiftUI and Combine. 
+
+# Overview of SwiftUI
+
+SwiftUI helps you build great-looking apps across all Apple platforms with the power of Swift — and as little code as possible. With SwiftUI, you can bring even better experiences to all users, on any Apple device, using just one set of tools and APIs.
 
 # Overview of Combine
 
@@ -14,6 +18,7 @@ These values can represent many kinds of asynchronous events.
 Combine declares publishers to expose values that can change over time, and subscribers to receive those values from the publishers.
 1. The Publisher protocol declares a type that can deliver a sequence of values over time. Publishers have operators to act on the values received from upstream publishers and republish them.
 2. At the end of a chain of publishers, a Subscriber acts on elements as it receives them. Publishers only emit values when explicitly requested to do so by subscribers. This puts your subscriber code in control of how fast it receives events from the publishers it’s connected to.
+
 Several Foundation types expose their functionality through publishers, including Timer, NotificationCenter, and URLSession. 
 Combine also provides a built-in publisher for any property that’s compliant with Key-Value Observing.
 You can combine the output of multiple publishers and coordinate their interaction. 
