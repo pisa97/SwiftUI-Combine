@@ -1,5 +1,5 @@
 <p align="center">
-	<img src="img/swiftui_combine.png" alt="SwiftUI and Combine" title="Sample app made with SwiftUI and Combine." />
+	<img src="swiftui_combine.jpeg" alt="SwiftUI and Combine" title="Sample app made with SwiftUI and Combine." />
 </p>
 
 
